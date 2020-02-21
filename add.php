@@ -4,7 +4,7 @@ $username = "demouser";
 $password = "demopassword";
 $dbname = "demodb";
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$conn = mysqli_connect($servername, $username, $password, $dbname) or die("Conexion Fallida");
 // Check connection
 
 $id = $_POST['id'];
